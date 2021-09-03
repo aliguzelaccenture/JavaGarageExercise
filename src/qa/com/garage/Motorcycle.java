@@ -14,7 +14,7 @@ public class Motorcycle extends Vehicle {
 			repairCost *= 10;
 		}
 		
-		if (this.getMake() == "Suzuki" || this.getMake() == "Yamaha" || this.getMake() == "BMW") {
+		if (this.colour == "Red" || this.getMake() == "White" || this.getMake() == "Green") {
 			repairCost *= 2;
 		}
 		

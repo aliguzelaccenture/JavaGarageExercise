@@ -9,6 +9,9 @@ public class Van extends Vehicle {
 	// Calculate Bill
 		public float calculateRepairs() {
 			float repairCost = maxCapacity * 10;
+			if (this.airCon == true) {
+				repairCost += 50;
+			}
 			if (this.isNonRunner() ) {
 				repairCost *= 20;
 			}
